@@ -33,10 +33,5 @@ class Users extends Component {
     );
   }
 }
-const userStyle = {
-  display: "grid",
-  gridTemplateCloums: "repeat(3, 1fr)",
-  gridGap: "1rem",
-};
 
 export default Users;
