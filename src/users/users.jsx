@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 class User extends Component {
-    constructor() {
-        super();
-        //set default state of git hub user 
-        this.state = {
-            id: 'id',
-            login: "mojombo",
-            avatar_url: "https://avatars.githubusercontent.com/u/1?v=4",
-            html_url: "https://github.com/mojombo"
+    // constructor() {
+    //     super();
+    //     //set default state of git hub user 
+    //     this.state = {
+    //         id: 'id',
+    //         login: "mojombo",
+    //         avatar_url: "https://avatars.githubusercontent.com/u/1?v=4",
+    //         html_url: "https://github.com/mojombo"
 
-        }
+    //     }
+    // }
+    state = {
+        id: 'id',
+        login: "mojombo",
+        avatar_url: "https://avatars.githubusercontent.com/u/1?v=4",
+        html_url: "https://github.com/mojombo"
+
     }
 
     render() {
