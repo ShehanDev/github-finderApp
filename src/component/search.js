@@ -11,13 +11,14 @@ class Search extends Component {
     this.setState({ [e.target.name]: e.target.value });
     console.log("handleOn change");
   };
-  onSubmit(e) {
+  onSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state.text);
     //pass the data to app componet to filter the result react does not allow the it (child to parent props passing )
     //pass the state as prop
-    this.props.searchUsers(this.setState.text);
-  }
+    this.props.searchUsers(this.state.text);
+    //clear the input area
+    this.setState({ text: "" });
+  };
 
   render() {
     return (
