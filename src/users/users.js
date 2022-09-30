@@ -6,6 +6,9 @@ const Users = ({ users, loading }) => {
   if (loading) {
     <Spinner />;
   } else {
+    {
+      console.log(users);
+    }
     return (
       <div className="grid-3">
         {users.map((user) => (
